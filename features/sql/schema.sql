@@ -1,4 +1,5 @@
 -- first define the database --
+CREATE extension IF NOT EXISTS vector;
 CREATE TABLE behaviour (
     userid SERIAL PRIMARY KEY,
     name VARCHAR(50),
@@ -8,5 +9,6 @@ CREATE TABLE behaviour (
     C INTEGER DEFAULT 0,
     E INTEGER DEFAULT 0,
     A INTEGER DEFAULT 0,
-    N INTEGER DEFAULT 0
+    N INTEGER DEFAULT 0,
+    embedding vector(1536)
 );
