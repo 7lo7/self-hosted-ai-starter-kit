@@ -10,5 +10,5 @@ CREATE TABLE behaviour (
     E INTEGER DEFAULT 0,
     A INTEGER DEFAULT 0,
     N INTEGER DEFAULT 0,
-    embedding vector(1536)
+    embedding vector(768)
 );
